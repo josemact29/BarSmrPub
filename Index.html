@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,28 +27,44 @@
         }
 
         main {
-            padding: 40px;
+            padding: 120px;
             text-align: center;
         }
 
         .buttons {
-            margin-top: 20px;
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
         }
 
         .button {
-            background-color: #b76e79;
-            color: #fff;
-            padding: 15px 25px;
+            color: #db3b3b;
+            padding: 80px 140px;
             text-decoration: none;
-            border-radius: 5px;
-            margin: 10px;
+            border-radius: 10px;
+            font-size: 2em;
+            margin: 80px;
             display: inline-block;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            transition: transform 0.3s ease;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-shadow: 2px 2px 8px rgb(255, 255, 255);
+            font-family: 'Cursive', 'Georgia', serif;
+            font-weight: bold;
         }
 
         .button:hover {
-            background-color: #e99baf;
             transform: scale(1.1);
+        }
+
+        .button-0-alcohol {
+            background-image: url("https://drive.google.com/thumbnail?id=1DpGcvObOrNTaXLimsZBJ8zwL4cyOjaeX");
+        }
+
+        .button-alcoholes {
+            background-image: url("https://drive.google.com/thumbnail?id=1dvnKVoSKIyuDlfk2twTSQ9HQqpBVTckO");
         }
 
         footer {
@@ -61,16 +78,18 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Información de Alcoholes</h1>
     </header>
     <main>
         <section>
-            <p>Bienvenido a nuestra página de información sobre alcoholes. Aquí encontrarás datos y curiosidades sobre tus bebidas favoritas.</p>
+            <p>Bienvenido a nuestra página de información sobre alcoholes. Aquí encontrarás datos y curiosidades sobre
+                tus bebidas favoritas.</p>
             <div class="buttons">
-                <a href="#" class="button">0% alcohol</a>
-                <a href="#" class="button">alcoholes</a>
+                <a href="#" class="button button-0-alcohol">0% ALCOHOL</a>
+                <a href="#" class="button button-alcoholes">ALCOHOLES</a>
             </div>
         </section>
     </main>
@@ -78,4 +97,5 @@
         <p>&copy; 2025 Información de Alcoholes. Todos los derechos reservados.</p>
     </footer>
 </body>
+
 </html>
