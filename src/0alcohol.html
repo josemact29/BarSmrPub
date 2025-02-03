@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0 Alcohol</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f3e4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #d4af37;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 120%;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        footer {
+            background-color: #d4af37;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .back-to-top {
+            margin-top: 20px;
+            padding: 10px 5px;
+            background-color: #d4af37;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -200px;
+            width: 200px;
+            height: 100%;
+            background-color: #f8f3e4;
+            overflow-y: auto;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            transition: left 0.3s;
+        }
+
+        .sidebar h2 {
+            margin-top: 80;
+        }
+
+        .sidebar-toggle {
+            position: fixed;
+            top: 3px;
+            left: 3px;
+            background-color: #d4af37;
+            color: #fff;
+            padding: 8px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .sidebar-open .sidebar {
+            left: 0;
+        }
+
+        .sidebar-open .content {
+            margin-left: 220px;
+        }
+
+        .sidebar .back-to-top {
+            margin-top: 5px;
+            padding: 10px 10px;
+            background-color: #d4af37;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>0 Alcohol</h1>
+        <nav>
+            <a href="../index.html">Página Principal</a>
+            <a href="./alcoholes.html">Alcoholes</a>
+        </nav>
+    </header>
+
+    <div class="sidebar-toggle" onclick="toggleSidebar()">☰</div>
+
+    <div class="sidebar">
+        <h2>Contenido</h2>
+        <ul>
+            <li><a href="#section1">Sección 1</a></li>
+            <li><a href="#section2">Sección 2</a></li>
+            <li><a href="#section3">Sección 3</a></li>
+        </ul>
+        <button class="back-to-top" onclick="window.scrollTo(0, 0);">Volver arriba</button>
+    </div>
+
+    <div class="content">
+        <main>
+            <table>
+                <tr>
+                    <td><img src="ruta/a/imagen1.jpg" alt="Imagen 1"></td>
+                    <td>Texto relacionado con la imagen 1.</td>
+                </tr>
+                <tr>
+                    <td><img src="ruta/a/imagen2.jpg" alt="Imagen 2"></td>
+                    <td>Texto relacionado con la imagen 2.</td>
+                </tr>
+                <tr>
+                    <td><img src="ruta/a/imagen1.jpg" alt="Imagen 1"></td>
+                    <td>Texto relacionado con la imagen 1.</td>
+                </tr>
+                <tr>
+                    <td><img src="ruta/a/imagen2.jpg" alt="Imagen 2"></td>
+                    <td>Texto relacionado con la imagen 2.</td>
+                </tr>
+                <tr>
+                    <td><img src="ruta/a/imagen1.jpg" alt="Imagen 1"></td>
+                    <td>Texto relacionado con la imagen 1.</td>
+                </tr>
+                <tr>
+                    <td><img src="ruta/a/imagen2.jpg" alt="Imagen 2"></td>
+                    <td>Texto relacionado con la imagen 2.</td>
+                </tr>
+                <tr>
+                    <td><img src="ruta/a/imagen1.jpg" alt="Imagen 1"></td>
+                    <td>Texto relacionado con la imagen 1.</td>
+                </tr>
+                <tr>
+                    <td><img src="ruta/a/imagen2.jpg" alt="Imagen 2"></td>
+                    <td>Texto relacionado con la imagen 2.</td>
+                </tr>
+                <tr>
+                    <td><img src="ruta/a/imagen1.jpg" alt="Imagen 1"></td>
+                    <td>Texto relacionado con la imagen 1.</td>
+                </tr>
+                <tr>
+                    <td><img src="ruta/a/imagen2.jpg" alt="Imagen 2"></td>
+                    <td>Texto relacionado con la imagen 2.</td>
+                </tr>
+                <tr>
+                    <td><img src="ruta/a/imagen1.jpg" alt="Imagen 1"></td>
+                    <td>Texto relacionado con la imagen 1.</td>
+                </tr>
+                <tr>
+                    <td><img src="ruta/a/imagen2.jpg" alt="Imagen 2"></td>
+                    <td>Texto relacionado con la imagen 2.</td>
+                </tr>
+                <tr>
+                    <td><img src="ruta/a/imagen1.jpg" alt="Imagen 1"></td>
+                    <td>Texto relacionado con la imagen 1.</td>
+                </tr>
+                <tr>
+                    <td><img src="ruta/a/imagen2.jpg" alt="Imagen 2"></td>
+                    <td>Texto relacionado con la imagen 2.</td>
+                </tr>
+                
+            </table>
+
+            <button class="back-to-top" onclick="window.scrollTo(0, 0);">Volver arriba</button>
+        </main>
+    </div>
+
+    <footer>
+        &copy; 2025 0 Alcohol. Todos los derechos reservados.
+    </footer>
+
+    <script>
+        function toggleSidebar() {
+            document.body.classList.toggle('sidebar-open');
+        }
+    </script>
+</body>
+</html>
