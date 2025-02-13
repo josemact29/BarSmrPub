@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcoholes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f3e4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #d4af37;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            background-color: black;
+            display: inline;
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+            nav a {
+                margin: 0 15px;
+                color: #ffffff;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 120%;
+            }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: separate;
+            border-spacing: 0 150px;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .image-center {
+            display: flex;
+            justify-content: center;
+            height: 250px;
+        }
+
+        .title {
+            color: #fff;
+            background-color: #000;
+            padding: 5px;
+            display: inline-block;
+        }
+
+        footer {
+            background-color: #d4af37;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .back-to-top {
+            margin-top: 20px;
+            padding: 10px 5px;
+            background-color: #d4af37;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -200px;
+            width: 200px;
+            height: 100%;
+            background-color: #f8f3e4;
+            overflow-y: auto;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            transition: left 0.3s;
+        }
+
+            .sidebar h2 {
+                margin-top: 80px;
+            }
+
+        .sidebar-toggle {
+            position: fixed;
+            top: 3px;
+            left: 3px;
+            background-color: #d4af37;
+            color: #fff;
+            padding: 8px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .sidebar-open .sidebar {
+            left: 0;
+        }
+
+        .sidebar-open .content {
+            margin-left: 220px;
+        }
+
+        .sidebar .back-to-top {
+            margin-top: 5px;
+            padding: 10px 10px;
+            background-color: #d4af37;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Alcoholes</h2>
+        <nav>
+            <a href="../index.html">Página Principal</a>
+            <a href="./0alcohol.html">0%Alcohol</a>
+        </nav>
+    </header>
+
+    <div class="sidebar-toggle" onclick="toggleSidebar()">☰</div>
+
+    <div class="sidebar">
+        <h3>Contenido</h3>
+        <h4>Whiskies</h4>
+        <ul>
+            <li><a href="#nikka">Nikka From The Barrel</a></li>
+            <li><a href="#ballantines">Ballantines</a></li>
+            <li><a href="#redlabel">Red Label</a></li>
+            <li><a href="#jackdaniels">Jack Daniels</a></li>
+            <li><a href="#chivasregal">Chivas Regal</a></li>
+            <li><a href="#hibiki">Hibiki Japanese Harmony</a></li>
+        </ul>
+        <h4>Rones</h4>
+        <ul>
+            <li><a href="#barcelo">Barceló Añejo</a></li>
+            <li><a href="#cacique">Cacique Añejo</a></li>
+            <li><a href="#palido">Ron Pálido</a></li>
+            <li><a href="#bacardí">Bacardí</a></li>
+            <li><a href="#almirante">Almirante</a></li>
+            <li><a href="#negrita">Negrita</a></li>
+        </ul>
+        <h4>Ginebras</h4>
+        <ul>
+            <li><a href="#tanqueray">Tanqueray London Dry Gin</a></li>
+            <li><a href="#sweetmelon">Puerto De Indias Sweet Melon</a></li>
+            <li><a href="#strawberry">Puerto De Indias Gin StrawBerry</a></li>
+            <li><a href="#bombay">Bombay Sapphire</a></li>
+            <li><a href="#seagrams">Seagrams Dry Gin</a></li>
+            <li><a href="#beefeater">Beefeater</a></li>
+        </ul>
+        <button class="back-to-top" onclick="window.scrollTo(0, 0);">Volver arriba</button>
+    </div>
+
+    <div class="content">
+        <main>
+            <table>
+                <tr id="nikka">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1z95SMe2HxIVed2eJs4DtBzd2MNq39H9A" alt="Nikka From The Barrel"></td>
+                    <td>
+                        <h1 class="title">Nikka From The Barrel</h1><br><br>
+                        -Destaca por su color naranja cobrizo.<br>
+                        -Es un whisky japonés muy complejo en el que percibimos notas florales y afrutadas, entremezcladas con especias y algún matiz que recuerda al cuero.<br>
+                        -Tiene un sabor potente, el cual poco a poco deja aparecer matices a especias, flores y caramelo.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#notvodka">Not Vodka</a></li>
+                            <li><a href="0alcohol.html#coctelsanfrancisco">Cóctel San Francisco</a></li>
+                            <li><a href="0alcohol.html#mojitofresa">Mojito de Fresa</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="ballantines">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1fiL0nMm7Rrwmrz3k2XsBawacMgEBmgfN" alt="Ballantines"></td>
+                    <td>
+                        <h1 class="title">Ballantines</h1><br><br>
+                        -Es un whisky escocés de mezcla, refinado y elegante.<br>
+                        -Su color dorado claro y sabor inconfundible provienen de la mezcla de whiskies de malta y cereales cuidadosamente seleccionados.<br>
+                        -Este whisky es añejado durante varios años en barricas de gran calidad.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#bluetropic">Blue Tropic</a></li>
+                            <li><a href="0alcohol.html#cocacola">CocaCola</a></li>
+                            <li><a href="0alcohol.html#fantanaranja">Fanta Naranja</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="redlabel">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1HezMLReDI5dS3r3koPbNIupuM60MHROt" alt="Red Label"></td>
+                    <td>
+                        <h1 class="title">Red Label</h1><br><br>
+                        -Se destaca por su carácter e intensidad, por sus notas especiadas que estallan con sabores vibrantes y ahumados.<br>
+                        -Es una mezcla que combina whiskies ligeros y whiskies ahumados y oscuros, creando una extraordinaria profundidad de sabor.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#zumopina">Zumo de piña</a></li>
+                            <li><a href="0alcohol.html#fantalimon">Fanta Limón</a></li>
+                            <li><a href="0alcohol.html#7up">7up</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="jackdaniels">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1YLex48GBLuZZU8hhv8GvJbhnHHtQILRE" alt="Jack Daniels"></td>
+                    <td>
+                        <h1 class="title">Jack Daniels</h1><br><br>
+                        -Sus componentes principales son; 80 % maíz, 12 % cebada y 8 % centeno.<br>
+                        -Todos los granos son de primera calidad, por lo que es lógico apreciar un espléndido dulzor.<br>
+                        -A esto se le pueden agregar, notas álgidas de pimienta y especias.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#licorpiruleta">Licor de Piruleta</a></li>
+                            <li><a href="0alcohol.html#fantalimon">Fanta Limón</a></li>
+                            <li><a href="0alcohol.html#7up">7up</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="chivasregal">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1BJitmMrGWZJcU2WXN7UuafmvXKXJYzbD" alt="Chivas Regal 12 años"></td>
+                    <td>
+                        <h1 class="title">Chivas Regal 12 años</h1><br><br>
+                        -Se encuentra compuesto por una malta madurada por 12 años, siendo su color original caramelo y ámbar.<br>
+                        -Sus aromas son suaves, de miel y hierbas, con un sutil toque de avellanas.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#zumopina">Zumo de piña</a></li>
+                            <li><a href="0alcohol.html#cocacola">CocaCola</a></li>
+                            <li><a href="0alcohol.html#fantanaranja">Fanta Naranja</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="hibiki">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1GL2lU6uvYvx2eUqtMjl0wN1iR-ncN3N-" alt="Hibiki Japanese Harmony"></td>
+                    <td>
+                        <h1 class="title">Hibiki Japanese Harmony</h1><br><br>
+                        -Este espirituoso es el resultado de una mezcla de diversos whiskies.<br>
+                        -Destaca por su intenso color ámbar, teniendo en nariz aromas de elementos florales como rosas y de hierbas aromáticas.<br>
+                        -En boca, destaca por un dulce sabor a miel y chocolate blanco, con ciertos matices subyacentes a frutas confitadas.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#notvodka">Not Vodka</a></li>
+                            <li><a href="0alcohol.html#mojitofresa">Mojito de Fresa</a></li>
+                            <li><a href="0alcohol.html#fantalimon">Fanta Limón</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="barcelo">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1G9yAGsZ8Nrhn_sFRRxm__YunjHHtLghw" alt="Barceló Añejo"></td>
+                    <td>
+                        <h1 class="title">Barceló Añejo</h1><br><br>
+                        -Destaca por su color ambarino brillante.<br>
+                        -Proporciona atractivos aromas de caramelo derretido, con acentuados toques de pimienta y tabaco.<br>
+                        -Es de cuerpo seco y tiene un delicioso sabor afrutado con un regusto ligeramente especiado.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#bluetropic">Blue Tropic</a></li>
+                            <li><a href="0alcohol.html#fantanaranja">Fanta Naranja</a></li>
+                            <li><a href="0alcohol.html#zumopina">Zumo de piña</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="cacique">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1ummjHOvQnxO4E1EGXlm4qh1cVC7F-OXj" alt="Cacique Añejo"></td>
+                    <td>
+                        <h1 class="title">Cacique Añejo</h1><br><br>
+                        -Su color dorado refleja su gran pureza.<br>
+                        -Sus aromas de frutos tropicales, con suaves notas de madera, le aportan un sabor equilibrado y con cuerpo.<br>
+                        -Es ron puro, natural, sin saborizantes añadidos, con una mezcla de rones envejecidos hasta 4 años en barricas de roble americano.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#mojitofresa">Mojito de Fresa</a></li>
+                            <li><a href="0alcohol.html#7up">7up</a></li>
+                            <li><a href="0alcohol.html#fantalimon">Fanta Limón</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="palido">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=18aVFY0-olWmQ4CeMoPAPOsTUWSKSbd35" alt="Ron Pálido"></td>
+                    <td>
+                        <h1 class="title">Ron Pálido</h1><br><br>
+                        -En vista, tenemos un color ambarino dorado, con reflejos brillantes.<br>
+                        -Contiene aromas de buena intensidad siendo en boca suave y equilibrado.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#zumopina">Zumo de piña</a></li>
+                            <li><a href="0alcohol.html#cocacola">CocaCola</a></li>
+                            <li><a href="0alcohol.html#fantanaranja">Fanta Naranja</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="bacardí">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1eKOwUsdN7GQVsFNg4mnlpKJsZOTW8rg2" alt="Bacardí"></td>
+                    <td>
+                        <h1 class="title">Bacardí</h1><br><br>
+                        -Es un ron elaborado tras una cuidadosa selección de la caña de azúcar de la más alta calidad.<br>
+                        -Se destila en alambiques de cobre para obtener la máxima calidad.<br>
+                        -Este ron deleita con su perfil fresco y versátil, ideal para una variedad de cócteles clásicos y modernos.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#bluetropic">Blue Tropic</a></li>
+                            <li><a href="0alcohol.html#fantalimon">Fanta Limón</a></li>
+                            <li><a href="0alcohol.html#7up">7up</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="almirante">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=16V8C9kRfuJHN3PNaBv800c8POCGbOpsV" alt="Almirante"></td>
+                    <td>
+                        <h1 class="title">Almirante</h1><br><br>
+                        -Presenta un hermoso color ámbar profundo que invita a la contemplación.<br>
+                        -Destaca por sus delicios aromas de vainilla, caramelo y frutas secas, seguido de una suavidad excepcional con sabores equilibrados de roble tostado, miel y un sutil toque de canela.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#licorpiruleta">Licor de Piruleta</a></li>
+                            <li><a href="0alcohol.html#fantanaranja">Fanta Naranja</a></li>
+                            <li><a href="0alcohol.html#zumomelocoton">Zumo de melocotón</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="negrita">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1Dx3yYsWB-mzeiRaK7WuL7oZu_oR5IIwL" alt="Negrita"></td>
+                    <td>
+                        <h1 class="title">Negrita</h1><br><br>
+                        -Es un destilado de aromas potentes con ingredientes de excelente calidad provenientes de Venezuela.<br>
+                        -Su sabor es exótico, muy interesante para combinar con zumos o gaseosas.<br>
+                        -Se elabora con destilados y aguardientes selectos.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#notvodka">Not Vodka</a></li>
+                            <li><a href="0alcohol.html#fantalimon">Fanta Limón</a></li>
+                            <li><a href="0alcohol.html#7up">7up</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="tanqueray">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1L4VFj4bemDVvmSx5GeLOLRaawbd3Sxxz" alt="Tanqueray London Dry Gin"></td>
+                    <td>
+                        <h1 class="title">Tanqueray London Dry Gin</h1><br><br>
+                        -Se elabora con enebro con aroma a pino, cilantro especiado y regaliz dulce.<br>
+                        -Es una ginebra con sabor a enebro con sabores distintivos de enebro a pino y una fina ralladura de limón.<br>
+                        -Se elabora a partir de alcohol de doble grano.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#zumopina">Zumo de piña</a></li>
+                            <li><a href="0alcohol.html#mojitofresa">Mojito de Fresa</a></li>
+                            <li><a href="0alcohol.html#licorpiruleta">Licor de Piruleta</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="sweetmelon">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1gSbYRhQIMi88rGvDdHP75WtUIUdZI4a8" alt="Puerto De Indias Sweet Melon"></td>
+                    <td>
+                        <h1 class="title">Puerto De Indias Sweet Melon</h1><br><br>
+                        -Cuenta con un matiz verde con destellos y reflejos verdes.<br>
+                        -El aroma predominante es claramente el del melón y el enebro.<br>
+                        -El sabor a melón es seguido por una evolución cítrica y culmina en un final dulce y refrescante.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#7up">7up</a></li>
+                            <li><a href="0alcohol.html#fantalimon">Fanta Limón</a></li>
+                            <li><a href="0alcohol.html#mojitofresa">Mojito de Fresa</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="strawberry">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1UpeKrmqAoEhgkqXs2PYTUP9Qt_z9QJ4M" alt="Puerto De Indias Gin StrawBerry"></td>
+                    <td>
+                        <h1 class="title">Puerto De Indias Gin StrawBerry</h1><br><br>
+                        -En nariz nos encontramos con notas marcadamente alcohólicas, afrutadas de arándanos, fresa dulce, fresa ácida, y ligeras notas cítricas.<br>
+                        -En boca, es cálida y con notas dulzonas. El final es medio y junto a recuerdos de fresas aparecen notas afrutadas claramente dulces y un contrapunto amargo.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#licorpiruleta">Licor de Piruleta</a></li>
+                            <li><a href="0alcohol.html#fantanaranja">Fanta Naranja</a></li>
+                            <li><a href="0alcohol.html#7up">7up</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="bombay">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1IPgUEUhL5twI6cQzahNMXrSlydoiD2hY" alt="Bombay Sapphire"></td>
+                    <td>
+                        <h1 class="title">Bombay Sapphire</h1><br><br>
+                        -El sabor de esta ginebra es el de una ginebra clásica, ligeramente seca y con un sutil acabado a enebro.<br>
+                        -Es una ginebra de 40º de alcohol fabricada en Inglaterra.<br>
+                        -Los botánicos utilizados para la fabricación de esta ginebra son las bayas de enebro, almendras, regaliz en rama, cassis, semillas de cilantro, piel de limón y raíz de iris.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#fantalimon">Fanta Limón</a></li>
+                            <li><a href="0alcohol.html#7up">7up</a></li>
+                            <li><a href="0alcohol.html#coctelmartini">Cóctel Martini</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="seagrams">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1OyqmWJNsF0NMKmdwvNCTcS3KGN7gQxBp" alt="Seagrams Dry Gin"></td>
+                    <td>
+                        <h1 class="title">Seagrams Dry Gin</h1><br><br>
+                        -Es una ginebra limpia de ligero color, con aroma suave.<br>
+                        -Destaca por su sabor herbáceo que, manteniendo su clásico golpe de enebro, resalta los exóticos aromas de sus botánicos, como el cilantro de la República Checa.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="0alcohol.html#7up">7up</a></li>
+                            <li><a href="0alcohol.html#fantalimon">Fanta Limón</a></li>
+                            <li><a href="0alcohol.html#mojitofresa">Mojito de Fresa</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr id="beefeater">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1UpeKrmqAoEhgkqXs2PYTUP9Qt_z9QJ4M" alt="Beefeater"></td>
+                    <td>
+                        <h1 class="title">Beefeater</h1><br><br>
+                        -Una ginebra premium, conocida por su sabor a enebro y sus notas cítricas.<br>
+                        -Se elabora en Londres y es ideal para cócteles como el gin tonic.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li>Tónica</li>
+                            <li><a href="0alcohol.html#mojitofresa">Mojito de Fresa</a></li>
+                            <li><a href="0alcohol.html#fantanaranja">Fanta Naranja</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Alcoholes. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleSidebar() {
+            document.body.classList.toggle('sidebar-open');
+        }
+    </script>
+</body>
+</html>
+

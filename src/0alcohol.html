@@ -1,9 +1,10 @@
+<
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0 Alcohol</title>
+    <title>Alcoholes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,6 +22,17 @@
         }
 
         h1 {
+            color: #fff;
+            background-color: black;
+            display: inline;
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
             margin: 0;
             font-size: 2.5em;
         }
@@ -30,13 +42,13 @@
             text-align: center;
         }
 
-        nav a {
-            margin: 0 15px;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 120%;
-        }
+            nav a {
+                margin: 0 15px;
+                color: #ffffff;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 120%;
+            }
 
         main {
             padding: 20px;
@@ -44,14 +56,29 @@
         }
 
         table {
-            width: 100%;
-            margin: 20px 0;
-            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: separate;
+            border-spacing: 0 150px;
         }
 
         td {
             padding: 10px;
             vertical-align: top;
+            text-align: left;
+        }
+
+        .image-center {
+            display: flex;
+            justify-content: center;
+            height: 250px;
+        }
+
+        .title {
+            color: #fff;
+            background-color: #000;
+            padding: 5px;
+            display: inline-block;
         }
 
         footer {
@@ -86,9 +113,9 @@
             transition: left 0.3s;
         }
 
-        .sidebar h2 {
-            margin-top: 80;
-        }
+            .sidebar h2 {
+                margin-top: 80px;
+            }
 
         .sidebar-toggle {
             position: fixed;
@@ -127,7 +154,7 @@
 </head>
 <body>
     <header>
-        <h1>0 Alcohol</h1>
+        <h2>Alcoholes</h2>
         <nav>
             <a href="../index.html">Página Principal</a>
             <a href="./alcoholes.html">Alcoholes</a>
@@ -137,11 +164,21 @@
     <div class="sidebar-toggle" onclick="toggleSidebar()">☰</div>
 
     <div class="sidebar">
-        <h2>Contenido</h2>
+        <h3>Contenido</h3>
         <ul>
-            <li><a href="#section1">Sección 1</a></li>
-            <li><a href="#section2">Sección 2</a></li>
-            <li><a href="#section3">Sección 3</a></li>
+            <li><a href="#notvodka">Not Vodka</a></li>
+            <li><a href="#coctelsanfrancisco">Cóctel San Francisco</a></li>
+            <li><a href="#mojitofresa">Mojito de Fresa</a></li>
+            <li><a href="#bluetropic">Blue Tropic</a></li>
+            <li><a href="#gordons">Gordon's</a></li>
+            <li><a href="#licorpiruleta">Licor de Piruleta</a></li>
+            <li><a href="#cocacola">CocaCola</a></li>
+            <li><a href="#fantanaranja">Fanta Naranja</a></li>
+            <li><a href="#fantalimon">Fanta Limón</a></li>
+            <li><a href="#7up">7up</a></li>
+            <li><a href="#zumopina">Zumo de Piña</a></li>
+            <li><a href="#zumomelocoton">Zumo Melocotón</a></li>
+            <li><a href="#redbull">RedBull</a></li>
         </ul>
         <button class="back-to-top" onclick="window.scrollTo(0, 0);">Volver arriba</button>
     </div>
@@ -149,71 +186,198 @@
     <div class="content">
         <main>
             <table>
-                <tr>
-                    <td><img src="ruta/a/imagen1.jpg" alt="Imagen 1"></td>
-                    <td>Texto relacionado con la imagen 1.</td>
+                <tr id="notvodka">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1KPpYjlxEF46WWRyVQuMu8p6dEzTVHM-W" alt="Not Vodka"></td>
+                    <td>
+                        <h1 class="title">Not Vodka</h1><br><br>
+                        - Bebida sin alcohol que imita el sabor de la vodka.<br>
+                        - Ideal para cócteles sin alcohol.<br>
+                        - Sabor limpio y suave.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="alcoholes.html#nikka">Nikka From The Barrel</a></li>
+                            <li><a href="alcoholes.html#ballantines">Ballantines</a></li>
+                            <li><a href="alcoholes.html#seagrams">Seagrams Dry Gin</a></li>
+                        </ul>
+                    </td>
                 </tr>
-                <tr>
-                    <td><img src="ruta/a/imagen2.jpg" alt="Imagen 2"></td>
-                    <td>Texto relacionado con la imagen 2.</td>
+                <tr id="coctelsanfrancisco">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1p_yblNpV0vb8eFKBvvJLgvM6gYTQ8W3M" alt="Cóctel San Francisco"></td>
+                    <td>
+                        <h1 class="title">Cóctel San Francisco</h1><br><br>
+                        - Cóctel sin alcohol a base de zumos de frutas.<br>
+                        - Sabor refrescante y dulce.<br>
+                        - Perfecto para cualquier ocasión.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="alcoholes.html#nikka">Nikka From The Barrel</a></li>
+                            <li><a href="alcoholes.html#ballantines">Ballantines</a></li>
+                        </ul>
+                    </td>
                 </tr>
-                <tr>
-                    <td><img src="ruta/a/imagen1.jpg" alt="Imagen 1"></td>
-                    <td>Texto relacionado con la imagen 1.</td>
+                <tr id="mojitofresa">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1Pb4EHB_4OdipeGulTV7oo-HdAZcmaD9D" alt="Mojito de Fresa"></td>
+                    <td>
+                        <h1 class="title">Mojito de Fresa</h1><br><br>
+                        - Versión sin alcohol del clásico mojito con fresas.<br>
+                        - Sabor fresco y afrutado.<br>
+                        - Ideal para disfrutar en verano.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="alcoholes.html#nikka">Nikka From The Barrel</a></li>
+                            <li><a href="alcoholes.html#tanqueray">Tanqueray</a></li>
+                        </ul>
+                    </td>
                 </tr>
-                <tr>
-                    <td><img src="ruta/a/imagen2.jpg" alt="Imagen 2"></td>
-                    <td>Texto relacionado con la imagen 2.</td>
+                <tr id="bluetropic">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1KlG7XNKLsapO_0lLZes488Ui2_79rViW" alt="Blue Tropic"></td>
+                    <td>
+                        <h1 class="title">Blue Tropic</h1><br><br>
+                        - Bebida sin alcohol de color azul vibrante.<br>
+                        - Sabor tropical y refrescante.<br>
+                        - Perfecto para fiestas y reuniones.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="alcoholes.html#nikka">Nikka From The Barrel</a></li>
+                            <li><a href="alcoholes.html#ballantines">Ballantines</a></li>
+                        </ul>
+                    </td>
                 </tr>
-                <tr>
-                    <td><img src="ruta/a/imagen1.jpg" alt="Imagen 1"></td>
-                    <td>Texto relacionado con la imagen 1.</td>
+                <tr id="gordons">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1zB2Pr4CuQz4xbSd8XTF1-mv3r04kJnY5" alt="Gordon's"></td>
+                    <td>
+                        <h1 class="title">Gordon's</h1><br><br>
+                        - Gin sin alcohol con sabor clásico.<br>
+                        - Ideal para combinar con tónica.<br>
+                        - Sabor equilibrado y aromático.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="alcoholes.html#nikka">Nikka From The Barrel</a></li>
+                            <li><a href="#mojitofresa">Mojito de Fresa</a></li>
+                        </ul>
+                    </td>
                 </tr>
-                <tr>
-                    <td><img src="ruta/a/imagen2.jpg" alt="Imagen 2"></td>
-                    <td>Texto relacionado con la imagen 2.</td>
+                <tr id="licorpiruleta">
+                    <td class="image-center"><img src="https://drive.google.com/thumbnail?id=1rL2J7hHQ6LkG_A2obpyFRbtabl_o5rXS" alt="Licor de Piruleta"></td>
+                    <td>
+                        <h1 class="title">Licor de Piruleta</h1><br><br>
+                        - Licor sin alcohol con sabor a piruleta.<br>
+                        - Sabor dulce y nostálgico.<br>
+                        - Ideal para cócteles creativos.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="alcoholes.html#nikka">Nikka From The Barrel</a></li>
+                            <li><a href="alcoholes.html#redbull">RedBull</a></li>
+                        </ul>
+                    </td>
                 </tr>
-                <tr>
-                    <td><img src="ruta/a/imagen1.jpg" alt="Imagen 1"></td>
-                    <td>Texto relacionado con la imagen 1.</td>
+                <tr id="cocacola">
+                    <td class="image-center"><img src="https://i.imgur.com/KQA1KQI.png" alt="CocaCola"></td>
+                    <td>
+                        <h1 class="title">CocaCola</h1><br><br>
+                        - Refresco clásico de cola.<br>
+                        - Sabor inconfundible.<br>
+                        - Perfecto para cualquier momento.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="alcoholes.html#ballantines">Ballantines</a></li>
+                            <li><a href="alcoholes.html#jackdaniels">Jack Daniels</a></li>
+                        </ul>
+                    </td>
                 </tr>
-                <tr>
-                    <td><img src="ruta/a/imagen2.jpg" alt="Imagen 2"></td>
-                    <td>Texto relacionado con la imagen 2.</td>
+                <tr id="fantanaranja">
+                    <td class="image-center"><img src="https://i.imgur.com/omvMCP5.png" alt="Fanta Naranja"></td>
+                    <td>
+                        <h1 class="title">Fanta Naranja</h1><br><br>
+                        - Refresco con sabor a naranja.<br>
+                        - Burbujeante y refrescante.<br>
+                        - Perfecto para cualquier ocasión.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="alcoholes.html#nikka">Nikka From The Barrel</a></li>
+                            <li><a href="alcoholes.html#gordons">Gordon's</a></li>
+                        </ul>
+                    </td>
                 </tr>
-                <tr>
-                    <td><img src="ruta/a/imagen1.jpg" alt="Imagen 1"></td>
-                    <td>Texto relacionado con la imagen 1.</td>
+                <tr id="fantalimon">
+                    <td class="image-center"><img src="https://i.imgur.com/tgMNjlj.png" alt="Fanta Limón"></td>
+                    <td>
+                        <h1 class="title">Fanta Limón</h1><br><br>
+                        - Refresco con sabor a limón.<br>
+                        - Refrescante y ligeramente ácido.<br>
+                        - Ideal para acompañar comidas.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="alcoholes.html#jackdaniels">Jack Daniels</a></li>
+                            <li><a href="#redbull">RedBull</a></li>
+                        </ul>
+                    </td>
                 </tr>
-                <tr>
-                    <td><img src="ruta/a/imagen2.jpg" alt="Imagen 2"></td>
-                    <td>Texto relacionado con la imagen 2.</td>
+                <tr id="7up">
+                    <td class="image-center"><img src="https://i.imgur.com/oEj5x61.png" alt="7up"></td>
+                    <td>
+                        <h1 class="title">7up</h1><br><br>
+                        - Refresco de lima-limón.<br>
+                        - Sabor ligero y burbujeante.<br>
+                        - Perfecto para hidratarse y refrescarse.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="#gordons">Gordon's</a></li>
+                            <li><a href="alcoholes.html#ballantines">Ballantines</a></li>
+                        </ul>
+                    </td>
                 </tr>
-                <tr>
-                    <td><img src="ruta/a/imagen1.jpg" alt="Imagen 1"></td>
-                    <td>Texto relacionado con la imagen 1.</td>
+                <tr id="zumopina">
+                    <td class="image-center"><img src="https://i.imgur.com/4oXjF3D.png" alt="Zumo de Piña"></td>
+                    <td>
+                        <h1 class="title">Zumo de Piña</h1><br><br>
+                        - Zumo natural de piña.<br>
+                        - Dulce y tropical.<br>
+                        - Ideal para un desayuno saludable.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="alcoholes.html#nikka">Nikka From The Barrel</a></li>
+                            <li><a href="alcoholes.html#jackdaniels">Jack Daniels</a></li>
+                        </ul>
+                    </td>
                 </tr>
-                <tr>
-                    <td><img src="ruta/a/imagen2.jpg" alt="Imagen 2"></td>
-                    <td>Texto relacionado con la imagen 2.</td>
+                <tr id="zumomelocoton">
+                    <td class="image-center"><img src="https://i.imgur.com/neJ7ICC.png" alt="Zumo de Melocotón"></td>
+                    <td>
+                        <h1 class="title">Zumo de Melocotón</h1><br><br>
+                        - Zumo suave y afrutado.<br>
+                        - Sabor dulce y cremoso.<br>
+                        - Perfecto para cualquier momento del día.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="#licorpiruleta">Licor de Piruleta</a></li>
+                            <li><a href="alcoholes.html#jackdaniels">Jack Daniels</a></li>
+                        </ul>
+                    </td>
                 </tr>
-                <tr>
-                    <td><img src="ruta/a/imagen1.jpg" alt="Imagen 1"></td>
-                    <td>Texto relacionado con la imagen 1.</td>
+                <tr id="redbull">
+                    <td class="image-center"><img src="https://i.imgur.com/k8JjQvt.png" alt="RedBull"></td>
+                    <td>
+                        <h1 class="title">RedBull</h1><br><br>
+                        - Bebida energética con cafeína y taurina.<br>
+                        - Aumenta la energía y la concentración.<br>
+                        - Ideal para mantenerse activo durante el día.<br>
+                        <strong>Mejores combinaciones:</strong>
+                        <ul>
+                            <li><a href="alcoholes.html#gordons">Gordon's</a></li>
+                            <li><a href="alcoholes.html#jackdaniels">Jack Daniels</a></li>
+                        </ul>
+                    </td>
                 </tr>
-                <tr>
-                    <td><img src="ruta/a/imagen2.jpg" alt="Imagen 2"></td>
-                    <td>Texto relacionado con la imagen 2.</td>
-                </tr>
-                
             </table>
 
             <button class="back-to-top" onclick="window.scrollTo(0, 0);">Volver arriba</button>
         </main>
+
     </div>
 
     <footer>
-        &copy; 2025 0 Alcohol. Todos los derechos reservados.
+        <p>&copy; 2025 Alcoholes. Todos los derechos reservados.</p>
     </footer>
 
     <script>

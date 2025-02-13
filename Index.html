@@ -7,8 +7,13 @@
     <title>Información de Alcoholes</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             background-color: #f8f3e4;
+            background-image: url(https://i.imgur.com/NxO1qvO.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
             color: #333;
             margin: 0;
             padding: 0;
@@ -19,11 +24,21 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+
+            header img {
+                margin-right: 5px;
+                width: 300px;
+                height: auto;
+            }
 
         h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 3.5em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
         main {
@@ -40,31 +55,28 @@
 
         .button {
             color: #db3b3b;
-            padding: 80px 140px;
-            text-decoration: none;
+            padding: 130px 210px;
             border-radius: 10px;
-            font-size: 2em;
-            margin: 80px;
+            margin: 100px;
             display: inline-block;
             transition: transform 0.3s ease;
-            background-size: cover;
+            background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            text-shadow: 2px 2px 8px rgb(255, 255, 255);
-            font-family: 'Cursive', 'Georgia', serif;
-            font-weight: bold;
+            height: 50px;
+            width: 100px;
         }
 
-        .button:hover {
-            transform: scale(1.1);
-        }
+            .button:hover {
+                transform: scale(1.1);
+            }
 
         .button-0-alcohol {
-            background-image: url("https://drive.google.com/thumbnail?id=1DpGcvObOrNTaXLimsZBJ8zwL4cyOjaeX");
+            background-image: url("https://i.imgur.com/g3cw8jk.png");
         }
 
         .button-alcoholes {
-            background-image: url("https://drive.google.com/thumbnail?id=1dvnKVoSKIyuDlfk2twTSQ9HQqpBVTckO");
+            background-image: url("https://i.imgur.com/L7yuMom.png");
         }
 
         footer {
@@ -81,15 +93,14 @@
 
 <body>
     <header>
+        <img src="https://i.imgur.com/XMJPbaT.png" alt="Logo">
         <h1>Información de Alcoholes</h1>
     </header>
     <main>
         <section>
-            <p>Bienvenido a nuestra página de información sobre alcoholes. Aquí encontrarás datos y curiosidades sobre
-                tus bebidas favoritas.</p>
+            <h2> Bienvenido a nuestra página de información sobre alcoholes. Aquí encontrarás datos y curiosidades sobre tus bebidas favoritas.</h2>>
             <div class="buttons">
-                <a href="./src/0alcohol.html" class="button button-0-alcohol">0% ALCOHOL</a>
-                <a href="#" class="button button-alcoholes">ALCOHOLES</a>
+                <a href="./src/0alcohol.html" class="button button-0-alcohol"></a> <a href="./src/alcoholes.html" class="button button-alcoholes"></a>
             </div>
         </section>
     </main>
